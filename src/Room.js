@@ -9,14 +9,14 @@ function Room() {
     <div className={`room ${lit? 'lit': 'dark'}`}>
         Room is {lit ? 'lit' : 'dark'}
         <br/>
-        Current Temperature = ${temp} &deg;F
+        Current Temperature = {temp} &deg;F
         <br/>
         Age  = {age}
         <br/>
         <button onClick={()=>setLit(lit=true)}>Toogle Light:ON</button>
         <button onClick={()=>setLit(lit=false)}>Toogle Light:OFF</button><br/>
-        <button onClick={()=>setTemp(++temp)}>+</button>
-        <button onClick={()=>setTemp(--temp)}>-</button><br/>
+        <button onClick={()=>setTemp(++temp)}>Increase Temperature</button>
+        <button onClick={()=>setTemp(--temp)}>Decrease Temperature</button><br/>
         <button onClick={()=>setage(++age)}>Increase Age</button>
     </div>
   );
